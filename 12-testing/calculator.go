@@ -27,5 +27,20 @@ func (c Calculator) Multiply(x... float64) float64 {
 }
 
 func (c Calculator) Average(x... float64) float64 {
-	return 0.0
+
+	sum := float64(0)
+
+	if len(x) == 0 {
+		return 0
+	}
+
+	if x == nil {
+		return 0
+	}
+
+	for _, v := range x {
+		sum += v
+	}
+
+	return sum / float64(len(x))
 }

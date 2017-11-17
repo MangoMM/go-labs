@@ -47,6 +47,29 @@ func TestCalculator_Multiply(t *testing.T) {
 	}
 }
 
+func TestCalculator_Average(t *testing.T) {
+
+	type testPair struct {
+		values []float64
+		answer float64
+	}
+
+	testCases := []testPair{
+		{answer: 4.0, values:[]float64{2, 4, 6}},
+		{answer: 0, values:[]float64{0}},
+	}
+
+	calc := Calculator{}
+
+	for _, tc := range testCases {
+		t.Run(fmt.Sprintf("average %+v", tc.values), func(t *testing.T) {
+			if ans := calc.Average(tc.values...); ans != tc.answer {
+				t.Errorf("expected %0.2f, got %0.2f", tc.answer, ans)
+			}
+		})
+	}
+}
+
 func BenchmarkSprint(b *testing.B) {
 	for n := 0; n < b.N; n++ {
 		_ = fmt.Sprint("HEllo World")
