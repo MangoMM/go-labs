@@ -58,3 +58,15 @@ func BenchmarkSprintf(b *testing.B) {
 		_ = fmt.Sprintf("HEllo World")
 	}
 }
+
+// Run benchmarks:
+// go test -bench .
+
+// Code coverage
+// go test -cover
+
+// Code coverage with output to file:
+// go test -cover -coverprofile cover.out
+
+// View html output of code coverage
+// go tool cover -html cover.out
