@@ -1,0 +1,10 @@
+mode: set
+github.com/asoorm/go-labs/12-testing/calculator.go:5.47,8.22 2 1
+github.com/asoorm/go-labs/12-testing/calculator.go:12.2,12.12 1 1
+github.com/asoorm/go-labs/12-testing/calculator.go:8.22,10.3 1 1
+github.com/asoorm/go-labs/12-testing/calculator.go:15.52,18.22 2 1
+github.com/asoorm/go-labs/12-testing/calculator.go:26.2,26.12 1 1
+github.com/asoorm/go-labs/12-testing/calculator.go:18.22,19.13 1 1
+github.com/asoorm/go-labs/12-testing/calculator.go:24.3,24.11 1 1
+github.com/asoorm/go-labs/12-testing/calculator.go:19.13,21.12 2 1
+github.com/asoorm/go-labs/12-testing/calculator.go:29.51,31.2 1 0
